@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-LIONLOGO = "https://telegra.ph/file/9c1bcdcb9185cbe7d01ab.jpg"
+LIONLOGO = "https://telegra.ph/file/4331daa1f78f724471c39.png"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"𝐋𝐢𝐨𝐧𝐙 𝗛𝗲𝗹𝗽𝗲𝗿\
+    text = f"𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨 𝗛𝗲𝗹𝗽𝗲𝗿\
         \n𝗣𝗿𝗼𝘃𝗶𝗱𝗲𝗱 𝗯𝘆 {mention}"
     buttons = [
         (Button.inline("ℹ️ Info", data="check"),),
@@ -63,7 +63,7 @@ def main_menu():
             Button.inline(f"Tools ({len(GRP_INFO['tools'])})", data="tools_menu"),
             Button.inline(f"Utils ({len(GRP_INFO['utils'])})", data="utils_menu"),
         ),
-        (Button.inline("Close Menu", data="close"),),
+        (Button.inline("•Close Menu•", data="close"),),
     ]
 
     return text, buttons
@@ -155,7 +155,7 @@ def paginate_help(
             ] + [
                 (
                     Button.inline("◀️", data=f"{prefix}_prev({modulo_page})_plugin"),
-                    Button.inline("🔙Main Menu", data="mainmenu"),
+                    Button.inline("Main Menu", data="mainmenu"),
                     Button.inline("▶️", data=f"{prefix}_next({modulo_page})_plugin"),
                 )
             ]
@@ -548,10 +548,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/TeamLionX/LionX"),
+                Button.url("Source code", "https://github.com/skuyykek69"),
                 Button.url(
-                    "Deploy",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMdNoor786%2FLionX&template=https%3A%2F%2Fgithub.com%2FMdNoor786%2FLionX",
+                    "Endorsement",
+                    "https://sociabuzz.com/iniokekk/tribe",
                 ),
             )
         ]
@@ -560,14 +560,14 @@ async def inline_handler(event):  # sourcery no-metrics
             url=LIONLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝐋𝐢𝐨𝐧𝐗𝐔𝐬𝐞𝐫𝐛𝐨𝐭.", "md"
+            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝙆𝙀𝙆𝕏𝙐𝙗𝙤𝙩.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝐋𝐢𝐨𝐧𝐗𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
-            description="Deploy yourself",
-            url="https://github.com/TeamLionX/LionX",
+            title="𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨",
+            description="Endorsement",
+            url="https://sociabuzz.com/iniokekk/tribe",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
