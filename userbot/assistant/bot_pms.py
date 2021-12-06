@@ -110,7 +110,6 @@ async def bot_start(event):
         buttons = [
             (
                 Button.url("Endorsement", "https://sociabuzz.com/iniokekk/tribe"),
-                ),
             )
         ]
     else:
