@@ -103,13 +103,13 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"Hey! 👤{mention},\
+            start_msg = f"Hi Bastrad! 👤{mention},\
                         \nI am {my_mention}'s assistant bot.\
                         \nYou can contact to my master from here.\
-                        \n\nPowered by [LionXub](https://t.me/LionX)"
+                        \n\nPowered by [𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨](https://t.me/LionX)"
         buttons = [
             (
-                Button.url("Repo", "https://github.com/TeamLionX/LionX"),
+                Button.url("Endorsement", "https://sociabuzz.com/iniokekk/tribe"),
                 Button.url(
                     "Deploy",
                     "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FTeamLionX2FLionX&template=https%3A%2F%2Fgithub.com%2FMdNoor786%2FLionX",
