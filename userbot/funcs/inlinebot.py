@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-LIONLOGO = "https://telegra.ph/file/4331daa1f78f724471c39.png"
+LIONLOGO = "https://telegra.ph/file/0e76c3c18632ca2619176.png"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -548,7 +548,7 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/skuyykek69"),
+                Button.url("Channel", "https://t.me/KEK_Projects"),
                 Button.url(
                     "Endorsement",
                     "https://sociabuzz.com/iniokekk/tribe",
@@ -581,7 +581,7 @@ async def inline_handler(event):  # sourcery no-metrics
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     buttons = [
-        (Button.inline("Open Menu", data="mainmenu"),),
+        (Button.inline("»Open Menu«", data="mainmenu"),),
     ]
     await event.edit("Menu Closed", buttons=buttons)
 
