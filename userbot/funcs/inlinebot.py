@@ -549,9 +549,10 @@ async def inline_handler(event):  # sourcery no-metrics
         buttons = [
             (
                 Button.url("Channel", "https://t.me/KEK_Projects"),
+                Button.url("Endorsement", "https://sociabuzz.com/iniokekk/tribe"),
                 Button.url(
-                    "Endorsement",
-                    "https://sociabuzz.com/iniokekk/tribe",
+                    "Dana Kaget Resmi",
+                    "https://t.me/DanaKagetResmi",
                 ),
             )
         ]
@@ -560,7 +561,7 @@ async def inline_handler(event):  # sourcery no-metrics
             url=LIONLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "𝗗𝗲𝗽𝗹𝗼𝘆 𝘆𝗼𝘂𝗿 𝗼𝘄𝗻 𝙆𝙀𝙆𝕏𝙐𝙗𝙤𝙩.", "md"
+            "𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝙗𝙮 𝙆𝙀𝙆𝕏𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨.", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
