@@ -103,8 +103,8 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"Hi Bastrad! 👤{mention},\
-                        \nI am {my_mention}'s assistant bot.\
+            start_msg = f"Hi bastard! 👤{mention},\
+                        \n What are you doing here?.\
                         \nYou can contact to my master from here.\
                         \n\n👨🏻‍💻 Powered by [𝙆𝙀𝙆 𝕏 𝙋𝙧𝙤𝙟𝙚𝙘𝙩𝙨](https://t.me/KEK_Projects)"
         buttons = [
